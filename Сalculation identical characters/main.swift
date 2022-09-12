@@ -7,13 +7,17 @@
 
 import Foundation
 
+// input any string
 let inputString: String? = "tesT"
 
-var anscnt = 0
+// dictionary to save values
 var dict = [String: Int]()
 
+// check to nil
 if inputString != nil {
+    // string to lowercase type
     if let inputUnwrapString = inputString?.lowercased() {
+        // loop for saving value
         for now in inputUnwrapString {
             let key = String(now)
             if dict.keys.contains(key) {
@@ -21,15 +25,8 @@ if inputString != nil {
             } else {
                 dict[key] = 1
             }
-            
-            if let val = dict[key] {
-                if val > anscnt {
-                    anscnt = val
-                }
-            }
-            
         }
     }
 }
 
-print(anscnt)
+print(dict.values.max()!)
