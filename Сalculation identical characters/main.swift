@@ -5,10 +5,12 @@
 //  Created by Mykola on 12.09.2022.
 //
 
+//MARK: Task link
+// https://youtu.be/QLhqYNsPIVo?list=PL6Wui14DvQPySdPv5NUqV3i8sDbHkCKC5&t=923
 import Foundation
 
 // input any string
-let inputString: String? = "tesT"
+let inputString: String? = "https://youtu.be/QLhqYNsPIVo?list=PL6Wui14DvQPySdPv5NUqV3i8sDbHkCKC5&t=923"
 
 // dictionary to save values
 var dict = [String: Int]()
